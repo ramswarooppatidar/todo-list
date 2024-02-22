@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>todo-list</title>
+        <link rel="stylesheet" type="text/css" href="index.css" />
+    </head>
+    <body>
+        
+        <div class="container">
+            <h1>To DoList</h1>
+           <div class="div-1">
+              <div class="row">
+                <input type="text" id="username" name="username">
+                <button>	&#10133</button>
+              </div>          
+           </div>
+           <div class="div-2">
+              <div>
+                <ul>
+                    <div>
+                        <li>first msg</li>
+                        <li>second msg</li>
+                        <li></li>
+                    </div>
+                </ul>
+             </div>
+           </div>
+            
+        </div>
+       
+        <script src="index.js"></script>
+        <script>
+           function addText() {
+           var newText = document.getElementById('myText'); // Assuming 'newText' is the id of your textarea
+           var list = document.getElementById('list'); // Assuming 'list' is the id of your list container
+    
+          if (newText.value.trim() !== '') {
+            list.innerHTML += '<li>' + newText.value + '</li>'; // Append the new text as a list item
+            newText.value = ''; // Clear the textarea after adding the text
+    }
+}
+        </script>
+    </body>
+</html>
